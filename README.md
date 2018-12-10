@@ -2,9 +2,9 @@
 
 The purpose of this API is to automate generation of CRUD statements based on SQL standards or their vendor-specific derivation.
 
-## Supported statements
+## Classes
 
-Following standard SQL statements are supported for generation (found in _src_ folder):
+Following standard SQL statements are supported for generation (found in **src** folder):
 
 - SELECT: using classes 
     - **Lucinda\Query\Select**: encapsulates a single SELECT statement (eg: SELECT id FROM table)
@@ -19,7 +19,7 @@ Following standard SQL statements are supported for generation (found in _src_ f
 - TRUNCATE: using class 
     - **Lucinda\Query\Truncate**: encapsulates a TRUNCATE statement (eg: TRUNCATE TABLE users)
     
-MySQL vendor statements extending SQL statements is also supported (found in _plugins/MySQL_ folder):
+MySQL vendor statements extending SQL statements is also supported (found in **plugins/MySQL** folder):
 
 - SELECT: using classes 
     - **Lucinda\Query\MySQLSelect**: extends **Lucinda\Query\Select**, supporting MySQL-specific operators as well
@@ -37,7 +37,7 @@ Developers are free to add support for other vendors as well!
 
 ## Examples
 
-To see examples how each classes are used, check unit tests in _test_ folder!
+To see examples how each classes are used, check unit tests in **test** folder!
 
 Example:
 
